@@ -13,4 +13,8 @@ router.get('/', async (req, res) => {
     // res.download('server.js'); reference for downloading in the future
 })
 
+// Note for querying data. Use JSON?$filter=col condition
+// https://data.cityofnewyork.us/resource/erm2-nwe9.json?$where=created_date%20%3E%20%272021-08-20T12:00:00%27
+// note all the percent numbers before date seem to be translated for '>'
+
 module.exports = router;
