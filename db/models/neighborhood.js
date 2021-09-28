@@ -1,6 +1,5 @@
-const { Int32 } = require('bson');
 const mongoose = require('mongoose');
-const Schema = mongoose.Schema;
+const { Schema } = mongoose;
 
 const neighborhoodSchema = new Schema({
     geom: {
@@ -35,4 +34,10 @@ const neighborhoodSchema = new Schema({
     crime: {
         type: Number
     }
-})
+}, {
+    timestamps: true
+});
+
+const NeighborhoodModel = mongoose.model('Neighborhood', neighborhoodSchema);
+
+module.exports = NeighborhoodModel;
