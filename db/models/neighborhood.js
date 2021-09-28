@@ -3,8 +3,9 @@ const { Schema } = mongoose;
 
 const neighborhoodSchema = new Schema({
     geom: {
-        geomType: String,
-        coordinates: Array,
+        type: Object,
+        // geomType: String,
+        // coordinates: Array,
         required: true
     },
     countyFips: {
