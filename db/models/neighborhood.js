@@ -16,6 +16,10 @@ const neighborhoodSchema = new Schema({
         type: String,
         required: true
     },
+    boroName: {
+        type: String,
+        required: true
+    },
     ntacode: {
         type: String,
         required: true
